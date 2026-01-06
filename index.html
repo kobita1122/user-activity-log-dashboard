@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Activity Log Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>User Activity Log</h1>
+
+<div class="filters">
+  <button onclick="filter('ALL')">All</button>
+  <button onclick="filter('LOGIN')">Login</button>
+  <button onclick="filter('UPDATE')">Update</button>
+  <button onclick="filter('LOGOUT')">Logout</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Action</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody id="logs"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
